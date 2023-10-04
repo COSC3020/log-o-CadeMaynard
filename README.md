@@ -12,3 +12,65 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 $T(n) \in O(f(n)) \iff \exists c, n_0: T(n) \leq c \cdot f(n) \forall n \geq n_0$
+<br>
+<br>
+$T(n) \in O(log_{2} n) \iff \exists c, n_0: T(n) \leq c \cdot log_{2} n \forall n \geq n_0$
+<br>
+<br>
+Just using the second half of the definition:
+<br>
+$T(n) \leq c \cdot log_{2} n \forall n \geq n_0$
+<br>
+<br>
+Using the change-of-base rule:
+<br>
+$T(n) \leq c \cdot \frac {log_{5}n}{log_{5}2} \forall n \geq n_0$
+<br>
+<br>
+$T(n) \leq c  \cdot \frac {1}{log_{5}2} \cdot log_{5}n \forall n \geq n_0$
+<br>
+<br>
+Combining constants:
+<br>
+$T(n) \leq d \cdot log_{5}n \forall n \geq n_0$
+<br>
+<br>
+Putting back into full definition:
+<br>
+$T(n) \in O(log_{5} n) \iff \exists c, n_0: T(n) \leq c \cdot log_{5} n \forall n \geq n_0$
+<br>
+<br>
+<br>
+Proof starting at $log_{5}n$
+<br>
+<br>
+$T(n) \in O(log_{5} n) \iff \exists c, n_0: T(n) \leq c \cdot log_{5} n \forall n \geq n_0$
+<br>
+<br>
+Just using the second half of the definition:
+<br>
+$T(n) \leq c \cdot log_{5} n \forall n \geq n_0$
+<br>
+<br>
+Using the change-of-base rule:
+<br>
+$T(n) \leq c \cdot \frac {log_{2}n}{log_{2}5} \forall n \geq n_0$
+<br>
+<br>
+$T(n) \leq c  \cdot \frac {1}{log_{2}5} \cdot log_{2}n \forall n \geq n_0$
+<br>
+<br>
+Combining constants:
+<br>
+$T(n) \leq d \cdot log_{2}n \forall n \geq n_0$
+<br>
+<br>
+Putting back into full definition:
+<br>
+$T(n) \in O(log_{2} n) \iff \exists c, n_0: T(n) \leq c \cdot log_{2} n \forall n \geq n_0$
+<br>
+<br>
+<br>
+Therefore,
+<br>
+$O(log_{2} n) = O(log_{5}n)$
